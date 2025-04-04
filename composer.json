@@ -1,0 +1,34 @@
+{
+    "name": "open-functions/notion",
+    "description": "The Notion Open Function package integrates Notion with large language models (LLMs) using the Open Functions architecture, enabling streamlined repository management and file operations.",
+    "homepage": "https://github.com/open-functions/notion",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Weigang",
+            "email": "florian@assistant-engine.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "mariosimao/notion-sdk-php": "^1.14",
+        "open-functions/open-functions": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenFunctions\\Tools\\Notion\\": "src/"
+        }
+    },
+    "require-dev": {
+        "filament/filament": "^3.3",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
